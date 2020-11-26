@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "drf_imgproxy"
+name = "drf-imgproxy"
 version = "0.1.0"
 description = ""
 authors = ["VIPER Development UG <info@viper.dev>"]
