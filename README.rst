@@ -3,7 +3,7 @@ drf-imgproxy
 ############
 
 Serialize Django's ImageField into `imgproxy
-<https://github.com/imgproxy/imgproxy>` URLs for your Django REST
+<https://github.com/imgproxy/imgproxy>`_ URLs for your Django REST
 Framework APIs to generate thumbnails.
 
 ****************
