@@ -71,6 +71,7 @@ In ``settings.py``:
 In `serializers.py`:
 
 .. code:: python
+
    ...
    from drf_imgproxy.serializers import ImgproxyResizeableImageField
    ...
