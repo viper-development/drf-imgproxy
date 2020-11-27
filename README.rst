@@ -84,3 +84,9 @@ In `serializers.py`:
            source='captured_photo'
        )
        ...
+
+********
+See also
+********
+
+* `drf-imgproxy-demo <https://github.com/viper-development/drf-imgproxy-demo>`_
