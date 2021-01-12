@@ -1,10 +1,7 @@
 [tool.poetry]
 name = "drf-imgproxy"
 version = "1.0.0"
-description = """
-Serialize Django's ImageField into imgproxy URLs for your Django REST
-Framework APIs to generate thumbnails.
-"""
+description = "Serialize Django's ImageField into imgproxy URLs for your Django REST Framework APIs to generate thumbnails."
 authors = ["VIPER Development UG <info@viper.dev>"]
 
 [tool.poetry.dependencies]
