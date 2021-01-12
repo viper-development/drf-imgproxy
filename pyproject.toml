@@ -3,6 +3,19 @@ name = "drf-imgproxy"
 version = "1.0.0"
 description = "Serialize Django's ImageField into imgproxy URLs for your Django REST Framework APIs to generate thumbnails."
 authors = ["VIPER Development UG <info@viper.dev>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/viper-development/drf-imgproxy"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django",
+    "Framework :: Django :: 2.1",
+    "Framework :: Django :: 2.2",
+    "Framework :: Django :: 3.0",
+    "Framework :: Django :: 3.1",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+keywords = ["imgproxy", "django-rest-framework", "django", "thumbnailer"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
