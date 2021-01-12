@@ -26,6 +26,16 @@ particular we recommend the following:
 Usage
 *****
 
+0. Installation
+===============
+
+You can easily install this package from PyPI with ``pip`` by doing:
+
+.. code:: bash
+
+   pip install drf-imgproxy
+
+
 1. Quickstart
 =============
 
@@ -68,7 +78,7 @@ In ``settings.py``:
        (1024, 768),
    )
 
-In `serializers.py`:
+In ``serializers.py``:
 
 .. code:: python
 
