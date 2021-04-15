@@ -1,11 +1,13 @@
+from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 
 from drf_imgproxy.serializers import ImgproxyResizeableImageField
 
 
 class FakeFile:
-    def __init__(self, name):
+    def __init__(self, name, url=None):
         self.name = name
+        self.url = url
 
 
 class ImgproxyResizeableImageFieldTest(TestCase):
@@ -29,3 +31,15 @@ class ImgproxyResizeableImageFieldTest(TestCase):
     def test_invalid_file_to_representation(self):
         res = self.serializer.to_representation(FakeFile(None))
         self.assertEqual(res, None)
+
+    def test_skip(self):
+        fake_url = 'https://imgproxy.test.local/test.png'
+        file = FakeFile('test.png', url=fake_url)
+
+        with self.settings(IMGPROXY_SKIP=True):
+            res = self.serializer.to_representation(file)
+
+            self.assertEqual(res, {
+                '480p': fake_url,
+                '600p': fake_url,
+            })

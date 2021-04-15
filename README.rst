@@ -78,6 +78,11 @@ In ``settings.py``:
        (1024, 768),
    )
 
+   # In case you want to skip imgproxy url generation, set this flag to True.
+   # When generation is being skipped, all the resolutions return the url of
+   # the source file if possible or None.
+   IMGPROXY_SKIP = False
+
 In ``serializers.py``:
 
 .. code:: python
