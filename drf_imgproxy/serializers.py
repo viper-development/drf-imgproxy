@@ -37,8 +37,16 @@ class ImgproxyResizeableImageField(serializers.ImageField):
 
         return urljoin(settings.IMGPROXY_HOST, signed_url)
 
+    def generate_proxy_skipped_url(self, width, height, data):
+        return getattr(data, 'url', None)
+
     def to_representation(self, data):
         if not data.name:
             return None
-        return {f'{h}p': self.generate_signed_url(w, h, data)
+
+        url_generator = self.generate_signed_url
+        if getattr(settings, 'IMGPROXY_SKIP', False):
+            url_generator = self.generate_proxy_skipped_url
+
+        return {f'{h}p': url_generator(w, h, data)
                 for w, h in settings.IMGPROXY_RESOLUTIONS}
