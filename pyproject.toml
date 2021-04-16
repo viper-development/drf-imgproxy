@@ -5,6 +5,7 @@ description = "Serialize Django's ImageField into imgproxy URLs for your Django 
 authors = ["VIPER Development UG <info@viper.dev>"]
 license = "MIT"
 readme = "README.rst"
+include = ["CHANGELOG.rst"]
 repository = "https://github.com/viper-development/drf-imgproxy"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
