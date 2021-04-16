@@ -1,4 +1,3 @@
-from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 
 from drf_imgproxy.serializers import ImgproxyResizeableImageField
