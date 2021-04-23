@@ -14,13 +14,21 @@ The format is based on `Keep a changelog`_ and this project adheres to
 `Unreleased`_
 *************
 
+Nothing for now
+
+.. _Unreleased: https://github.com/viper-development/drf-imgproxy/compare/1.1.0...HEAD
+
+**********************
+`1.1.0`_ -- 2021-04-23
+**********************
+
 Added
 =====
 
 * ``IMGPROXY_SKIP``, option to skip imgproxy URL generation and only
-  return the url of the source file.
+  return the url of the source file, when enabled.
 
-.. _Unreleased: https://github.com/viper-development/drf-imgproxy/compare/1.0.1...HEAD
+.. _1.1.0: https://github.com/viper-development/drf-imgproxy/compare/1.0.1...1.1.0
 
 **********************
 `1.0.1`_ -- 2021-01-12
